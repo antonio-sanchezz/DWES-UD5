@@ -14,7 +14,8 @@
 
     // Mostramos el id de la sesion.
     echo "Sesion id: " . session_id() . "<br>";
-
+    echo "Obtenemos el mismo id ya que se nos ha guardado la informacion del id en una COOKIE.";
+    echo "Los ficheros de sesion se encuentran en la carpeta /var/lib/php/sessions";
     ?>
 </body>
 </html>

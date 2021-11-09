@@ -7,14 +7,19 @@
     <title>Document</title>
 </head>
 <body>
+    <table>
+        <tr>
+            <th>Funcion</th>
+            <th>Valores</th>
+        </tr>
     <?php
-
-    // Iniciamos la sesion.
     session_start();
-
-    // Mostramos el id de la sesion.
-    echo "Sesion id: " . session_id() . "<br>";
+    //print_r(phpinfo());
+    echo "<tr>";
+    echo "<td>" .$_SESSION . "</td>";
+    echo "</tr>";
 
     ?>
+    </table>
 </body>
 </html>

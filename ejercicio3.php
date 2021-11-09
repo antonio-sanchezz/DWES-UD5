@@ -9,11 +9,10 @@
 <body>
     <?php
 
-    // Iniciamos la sesion.
     session_start();
 
-    // Mostramos el id de la sesion.
-    echo "Sesion id: " . session_id() . "<br>";
+    $_SESSION['Nombre'] = "Antonio Sanchez Espinosa";
+    $_SESSION['Edad'] = 23;
 
     ?>
 </body>
