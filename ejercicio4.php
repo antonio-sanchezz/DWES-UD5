@@ -26,12 +26,12 @@
         <tr>
             <td>session.save_handler</td>
             <td>Define el nombre del gestor que se usa para almacenar y recuperar información asociada con una sesión</td>
-            <td>Por defecto es files</td>
+            <td>Por defecto es files, podemos cambiarlo por otro nombre de gestor de archivos</td>
         </tr>
         <tr>
             <td>session.name</td>
             <td>Especifica el nombre de la sesión que se usa como nombre de cookie. Sólo debería contener caracteres alfanuméricos</td>
-            <td>Por defecto es PHPSESSID</td>
+            <td>Por defecto es PHPSESSID, el identificador de sesión es una cadena aleatoria de 26 caracteres.</td>
         </tr>
         <tr>
             <td>session.auto_start</td>
