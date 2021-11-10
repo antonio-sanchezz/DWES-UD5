@@ -7,8 +7,9 @@ try {
 } catch (PDOException $e) {
     echo "Connection fallida: " . $e->getMessage();
 }
-
-// Obtenemos todos los datos del usuario solicitado.
+/*
+* Obtenemos todos los datos del usuario solicitado.
+*/
 function getUser($username) {
     try {
 
