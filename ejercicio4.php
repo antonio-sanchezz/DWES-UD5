@@ -26,7 +26,7 @@
         <tr>
             <td>session.save_handler</td>
             <td>Define el nombre del gestor que se usa para almacenar y recuperar información asociada con una sesión</td>
-            <td>Por defecto es files, podemos cambiarlo por otro nombre de gestor de archivos</td>
+            <td>Por defecto es files, podemos cambiarlo por otro como la memoria del servidor (memcached) o una base de datos (sqllite)</td>
         </tr>
         <tr>
             <td>session.name</td>
