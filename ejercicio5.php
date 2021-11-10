@@ -15,10 +15,10 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-        if (insertaElemento($_POST['username'], password_hash($_POST['password'], PASSWORD_DEFAULT), $_POST['cuentaBancaria']) != 1) {
-            $error = "<p style='color:red'>El usuario ya existe.</p>";
-        } else {
+        if (insertaElemento($_POST['username'], password_hash($_POST['password'], PASSWORD_DEFAULT), $_POST['cuentaBancaria'])) {
             $error = "<p style='color:green'>Usuario registrado correctamente.</p>";
+        } else {
+            $error = "<p style='color:red'>El usuario ya existe.</p>";
         }
         
     }
