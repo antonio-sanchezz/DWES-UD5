@@ -36,6 +36,4 @@ function passwordVerify($username, $password) {
     return $result;
 }
 
-//passwordVerify('admin', password_hash('developer', PASSWORD_DEFAULT));
-
 ?>
