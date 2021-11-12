@@ -9,6 +9,16 @@
 <body>
     <?php
 
+    session_start();
+
+    if (isset($_SESSION['perfil'])) {
+        if ($_SESSION['perfil'] == "usuario") {
+            header("Location: usuario.php");
+        } else if ($_SESSION['perfil'] == "admin") {
+            header("Location: admin.php");
+        }
+    }
+
     require_once("ejercicio6BBDD.php");
 
     $error = "";
@@ -17,6 +27,14 @@
 
         if (passwordVerify($_POST['username'], $_POST['password'])) {
             $error = "<p style='color:green'>Sesión iniciada correctamente.</p>";
+            $_SESSION['perfil'] = getUser($_POST['username'])['perfil'];
+            
+            // Redireccion dependiendo del perfil del usuario logueado.
+            if ($_SESSION['perfil'] == "admin") {
+                header("Location: admin.php");
+            } else if (isset($_SESSION['perfil']) == "usuario") {
+                header("Location: usuario.php");
+            }
         } else {
             $error = "<p style='color:red'>Contraseña incorrecta.</p>";
         }

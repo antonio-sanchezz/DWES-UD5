@@ -18,7 +18,7 @@
             header("Location: usuario.php");
         }
     } else {
-        header("Location: ejercicio7.php");
+        header("Location: ejercicio6.php");
     }
 
 

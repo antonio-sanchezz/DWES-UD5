@@ -18,7 +18,7 @@
             echo "Eres el jefe supremo, ¿no quieres ir a tu página?";
         }
     } else {
-        header("Location: ejercicio7.php");
+        header("Location: ejercicio6.php");
     }
 
 
